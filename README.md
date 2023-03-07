@@ -64,3 +64,7 @@ When you are ready using the virtual environment, deactivate the environment in 
 ```
 
 The prompt should read `pol2578 $` afterwards.
+
+## Step 7: Special packages
+
+`sklearn` must be installed with `pip install `scikit-learn`, just `pip install sklearn` does not work.
