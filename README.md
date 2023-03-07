@@ -1,1 +1,49 @@
 # my-python-journey
+
+Here are all the things nobody told me about Python, and that made me spend several hours on Google and Stackoverflow.
+
+What I describe here is something I consider good practice, in a way that this allows you to track the dependencies for your projects, and then upload your code to GitHub or copy it on a USB stick, and it will work on other computer with already installed Python.
+
+## Step 1: Create virtual environments
+
+From the command line create a new folder and create an environment in the `venv` folder. Skip ignore the text before the `$` and the `$`, that is the command line prompt which shows on which folder we are at the moment.
+
+```bash
+~ $ mkdir pol2578
+~ $ cd pol2578
+pol2578 $ python3 -m venv venv
+```
+
+## Step 2: Activate the virtual environment
+
+You need to source (i..e, execute) a file that Python created in the `venv` folder in the previous step.
+
+```bash
+pol2578 $ source venv/bin/activate
+```
+
+Note that this changes the prompt to `(venv) pol2578 $`
+
+## Step 3: Install pip inside the environment
+
+In order to be able to install packages directly from Visual Studio Code (VSC), we need to install `pip, the Python package manager, inside the virtual environment, In this way, VSC will be able to install any missing packages when we get a Python notebook from a colleague.
+
+```
+(venv) pol2578 $ python -m ensurepip --upgrade
+```
+
+## Step 4: Deactivate the environment
+
+Using and environment in the command line and in VSC are not the same. Deactivate the environment in the command line.
+
+```
+(venv) pol2578 $ deactivate
+```
+
+The prompt should read `pol2578 $` afterwards.
+
+## Step 4: Start a Python notebook from VSC
+
+Open VSC, go to `File -> Open Folder`, and open the `pol2578` folder just created. Then, at the top right corner, click the `environment` tab and select `Python Environments -> venv (Python 3.11.2) venv/bin/python Recommended`.
+
+Now you are ready to edit any Python notebook shared with you or create your own with `.ipynb` extension by clicking `File -> New File -> `Jupyter Notebook .ipynb support`.
