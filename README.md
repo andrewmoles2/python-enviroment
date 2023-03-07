@@ -28,22 +28,39 @@ Note that this changes the prompt to `(venv) pol2578 $`
 
 In order to be able to install packages directly from Visual Studio Code (VSC), we need to install `pip, the Python package manager, inside the virtual environment, In this way, VSC will be able to install any missing packages when we get a Python notebook from a colleague.
 
-```
+```bash
 (venv) pol2578 $ python -m ensurepip --upgrade
 ```
 
-## Step 4: Deactivate the environment
+## Step 4: Install wheel package
 
-Using and environment in the command line and in VSC are not the same. Deactivate the environment in the command line.
+To avoid messages of the form `Using legacy 'setup.py install' for sklearn, since package 'wheel' is not installed.` you must install `wheel`.
 
+```bash
+(venv) pol2578 $ pip install wheel
 ```
-(venv) pol2578 $ deactivate
-```
 
-The prompt should read `pol2578 $` afterwards.
-
-## Step 4: Start a Python notebook from VSC
+## Step 5: Start a Python notebook from VSC
 
 Open VSC, go to `File -> Open Folder`, and open the `pol2578` folder just created. Then, at the top right corner, click the `environment` tab and select `Python Environments -> venv (Python 3.11.2) venv/bin/python Recommended`.
 
 Now you are ready to edit any Python notebook shared with you or create your own with `.ipynb` extension by clicking `File -> New File -> `Jupyter Notebook .ipynb support`.
+
+
+## Step 6: Install additional packages
+
+Using and environment in the command line and in VSC are not the same.
+
+If VSC needs an additional package such as `pandas`, you can install it from the command line.
+
+```
+(venv) pol2578 $ pip install pandas
+```
+
+When you are ready using the virtual environment, deactivate the environment in the command line. From VSC side, it is sufficient to close the window.
+
+```bash
+(venv) pol2578 $ deactivate
+```
+
+The prompt should read `pol2578 $` afterwards.
