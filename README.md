@@ -68,3 +68,13 @@ The prompt should read `pol2578 $` afterwards.
 ## Step 7: Special packages
 
 `sklearn` must be installed with `pip install `scikit-learn`, just `pip install sklearn` does not work.
+
+## Step 8: A package needs a lower Python version
+
+I found that numba needs Python version 3.7 to 3.11 and I have 3.11.2. Therefore, I created a virtual environment with Python 3.8.0.
+
+```bash
+pol2578 $ sudo dnf install conda
+pol2578 $ conda create -n "venv" python=3.8.0 ipython
+pol2578 $ conda activate venv
+```
