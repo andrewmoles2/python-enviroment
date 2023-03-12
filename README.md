@@ -76,7 +76,7 @@ If VSC needs an additional package such as `pandas`, you can install it from the
 When you are ready using the virtual environment, deactivate the environment in the command line. From VSC side, it is sufficient to close the window.
 
 ```bash
-(venv) pol2578 $ deactivate
+(venv) pol2578 $ conda deactivate
 ```
 
 The prompt should read `pol2578 $` afterwards.
