@@ -76,5 +76,10 @@ I found that numba needs Python version 3.7 to 3.11 and I have 3.11.2. Therefore
 ```bash
 pol2578 $ sudo dnf install conda
 pol2578 $ conda create -n "venv" python=3.8.0 ipython
+```
+
+After closing and reopening the command line I activated the virtual environment with
+
+```bash
 pol2578 $ conda activate venv
 ```
