@@ -86,3 +86,5 @@ The prompt should read `pol2578 $` afterwards.
 `sklearn` must be installed with `pip install scikit-learn`, just `pip install sklearn` does not work.
 
 `pandas` needs `pip install openpyxl` to export to Excel.
+
+`keras` requires `pip install tensorflow`.
