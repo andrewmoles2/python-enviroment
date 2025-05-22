@@ -52,6 +52,14 @@ I created a virtual environment with Python 3.8.0 to solve the requirements prob
 pol2578 $ conda create -n "pol2578" python=3.8.0 ipython
 ```
 
+Note that if you are not sure what environments you have already made you can run the code below in the directory you are working in. 
+
+```bash
+conda env list
+```
+
+This will bring up a list of what environments you have already installed, and helpfully the names of them! 
+
 ## Step 3: Activate the virtual environment
 
 After closing and reopening the command line I activate the virtual environment with
