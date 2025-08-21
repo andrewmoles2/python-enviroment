@@ -83,7 +83,7 @@ In order to be able to install packages directly from Visual Studio Code (VSC), 
 
 Open VSC, go to `File -> Open Folder`, and open the `pol2578` folder just created. Then, at the top right corner, click the `environment` tab and select `Python Environments -> pol2578 (Python 3.8.0) ~/miniconda/envs/pol2578/bin/python`.
 
-If this does not work, you will need to open the (command palette)[https://code.visualstudio.com/docs/python/environments#_using-the-create-environment-command] which will allow you to make sure vscode is using the environment you want. 
+If this does not work, you will need to open the [command palette](https://code.visualstudio.com/docs/python/environments#_using-the-create-environment-command) which will allow you to make sure vscode is using the environment you want. 
 
 Now you are ready to edit any Python notebook shared with you or create your own with `.ipynb` extension by clicking `File -> New File -> `Jupyter Notebook .ipynb support`.
 
